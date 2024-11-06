@@ -1,5 +1,5 @@
 Algoritmo "Consulta"
-arquivo "C:\\Users\\UNIP\\Documents\\LPA\\Dados.txt"
+arquivo "C:\Users\UNIP\Documents\LPA\Dados.txt"
 
 Var
   i, j: inteiro
