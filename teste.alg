@@ -23,27 +23,25 @@ Inicio
     
     escolha opcao
       caso 1
-        j <- 0 // Inicializa o contador de palavras encontradas
         // Loop de pesquisa
-        repita
-          escreva("Digite a palavra a consultar (ou 'sair' para voltar ao menu): ")
+        escreva("Digite a posição (1 a 5) para armazenar a consulta: ")
+        leia(j)
+        se j < 1 ou j > 5 entao
+          escreval("Posição inválida!")
+        senao
+          escreva("Digite a palavra a consultar: ")
           leia(x)
-          se x = "sair" entao
-            interrompa
-          fimse
           para i de 1 ate 5 faca
             se x = y[i] entao
               escreval("Palavra Encontrada!")
-              j <- j + 1
+              y[j] <- x
               interrompa
             fimse
           fimpara
-          se j = 0 entao
+          se i > 5 entao
             escreval("Palavra não Encontrada!")
-          senao
-            escreval("Total de palavras encontradas: ", j)
           fimse
-        ate que x = "sair"
+        fimse
       caso 2
         escreval("Saindo...")
       outrocaso
