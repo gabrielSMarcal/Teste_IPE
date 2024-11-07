@@ -1,5 +1,5 @@
 Algoritmo "Consulta"
-arquivo "C:\Users\UNIP\Documents\LPA\Dados.txt"
+arquivo "C:\Users\gabri\OneDrive\Documentos\teste.txt"
 
 Var
   i, j: inteiro
@@ -9,18 +9,19 @@ Var
 
 Inicio
   // Inicializa o vetor com palavras vazias
-  para i de 1 ate 5 passo 1 faca
+  para i de 1 ate 5 faca
     y[i] <- ""
   fimpara
 
   // Menu de opções
-  repita
+  opcao <- 0
+  enquanto opcao <> 3 faca
     escreval("Escolha uma opcao:")
     escreval("1 - Consultar palavra")
     escreval("2 - Cadastrar palavra")
     escreval("3 - Sair")
     leia(opcao)
-    
+
     escolha opcao
       caso 1
         // Loop de pesquisa
@@ -58,6 +59,6 @@ Inicio
       outrocaso
         escreval("Opcao invalida!")
     fimescolha
-  ate que opcao = 3
+  fimenquanto
 
 Fimalgoritmo
