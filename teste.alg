@@ -9,7 +9,7 @@ Var
 
 Inicio
   // Inicializa o vetor com palavras do arquivo
-  para i de 1 ate 5 faca
+  para i de 1 ate 10 faca
     leia(y[i])
   fimpara
 
@@ -28,7 +28,7 @@ Inicio
         escreva("Digite a palavra a consultar: ")
         leia(x)
         j <- 0 // Inicializa o índice para pesquisa
-        para i de 1 ate 7 faca
+        para i de 1 ate 10 faca
           se x = y[i] entao
             escreval("Palavra Encontrada na posição ", i)
             j <- 1
@@ -43,17 +43,13 @@ Inicio
         escreva("Digite a palavra a cadastrar: ")
         leia(x)
         j <- 0 // Inicializa o índice para cadastro
-        para i de 1 ate 7 faca
+        para i de 1 ate 10 faca
           se y[i] = "" entao
             y[i] <- x
             escreval("Palavra cadastrada na posição ", i)
             j <- 1
             // Escreve a nova palavra no arquivo
-            abrearquivo(arquivo)
-            para i de 1 ate 7 faca
-              escreva(y[i])
-            fimpara
-            fechearquivo
+            escreval("palavra ", y[i], " cadastrada com sucesso")
             interrompa
           fimse
         fimpara
